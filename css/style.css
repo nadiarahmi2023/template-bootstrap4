@@ -1,0 +1,753 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+@font-face {
+  font-family: 'apercubold';
+  src: url(apercu_bold-webfont.woff2) format('woff2'),url(apercu_bold-webfont.woff) format('woff');
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'aperculight';
+  src: url(../fonts/apercufonts/apercu_light-webfont.woff2) format('woff2'),url(../fonts/apercufonts/apercu_light-webfont.woff) format('woff');
+  font-weight: 400;
+  font-style: normal
+}
+@font-face {
+  font-family: 'apercubold';
+  src: url(../fonts/apercufonts/apercu_bold-webfont.woff2) format('woff2'),url(../fonts/apercufonts/apercu_bold-webfont.woff) format('woff');
+  font-weight: 400;
+  font-style: normal
+}
+@font-face {
+  font-family: 'apercumedium';
+  src: url(../fonts/apercufonts/apercu_medium-webfont.woff2) format('woff2'),url(../fonts/apercufonts/apercu_medium-webfont.woff) format('woff');
+  font-weight: 400;
+  font-style: normal
+}
+@font-face {
+  font-family: 'apercuregular';
+  src: url(../fonts/apercufonts/apercu_regular-webfont.woff2) format('woff2'),url(apercu_regular-webfont.woff) format('woff');
+  font-weight: 400;
+  font-style: normal
+}
+
+/*start Global rules*/
+* {
+  font-family: 'apercuregular';
+  box-sizing : border-box;
+  margin     : 0;
+  padding    : 0;
+}
+
+@media (min-width: 992px) {  
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10000;
+    box-shadow: 5px 5px 19px 0px rgba(0, 0, 0, 0.5);
+}
+}
+.scroll-to-top{
+	background-color:#333;
+	color:#fff;
+	display:block;
+	padding:2px 5px;
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	display:none;
+
+}
+/*
+.scroll-to-top{
+	background-color:#333;
+	color:#fff;
+	display:block;
+	padding:2px 5px;
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	display:none;
+
+}*/
+/*
+.btn.scroll-to-top{
+  display: none;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.scroll-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 24px;
+  background-color: #00335a;
+  color: #fff;
+  padding: 0;
+  z-index: 999;
+}*/
+/* end Global rules*/
+/*start header*/
+header .top-header {
+background-color:#000000;
+  color           : #fff;
+
+
+}
+header .top-header a span{
+  font-size:12px;
+  color: #ffffff;
+  font-weight: 500;
+}
+header  a:hover{
+  text-decoration: none;
+ }
+header .top-header  .call,
+header .top-header  .email,
+header .top-header  .reseaux-sociaux{
+  position:relative;
+}
+@media screen and (min-width: 520px) {
+  
+
+header .top-header  .call::after ,
+header .top-header  .email::after,
+header .top-header .reseaux-sociaux  ul::after
+{
+  content: "|";
+  padding: 0 8px;
+  color: #fff;
+
+
+}
+}
+header  .reseaux-sociaux  ul li {
+  display      : inline-block;
+  color        : #fff;
+ padding:4px;
+}
+header .top-header  img:hover {
+  border: 1px solid red;
+  color:white;
+
+}
+/*start navbar*/
+.navbar-light .navbar-nav .nav-link{
+font-size: 14px;
+color: #000000;
+padding: 5px 10px;
+}
+ .navbar-light .navbar-brand{
+  color:#00a8a3;
+  font-size: 30px;
+  font-style: italic;
+
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover{
+ background-color: #00a8a3;
+ border-radius: 20px;
+ 
+ color:#fff;
+}
+
+
+/*end navbar*/
+/*start banner*/
+.banner{
+  position: relative;
+}
+.banner img{
+  object-fit: cover;
+}
+.banner .title{
+  position:absolute;
+  top:4%;
+  z-index: 2;
+  width: 33%;
+  left: 14%;
+}
+.banner .title h1{
+   font-size: 55px;
+  color: #000000;
+}
+.banner .title .p-text{
+font-size:18px;
+color: #000000;
+text-align: justify;
+
+}
+
+.owl-prev .fa, .owl-next .fa {
+  display: block;
+  line-height: 21px;
+  font-size: 20px;
+}
+
+.owl-carousel .owl-nav button.owl-next, 
+.owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  top:45%;
+  background: #00a8a3;
+  
+  font-size:25px;
+  color: #fff;
+ 
+  border-radius: 35px;
+  width: 50px;
+  height: 50px;
+}
+.owl-carousel .owl-nav button.owl-next{
+ right:24px;
+}
+.owl-carousel .owl-nav button.owl-prev{
+  left:24px;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: transparent;
+    color: #00a8a3;
+    border:1px solid #00a8a3;
+    
+}
+
+
+@media only screen and (min-width: 992px){
+.banner .reservation .filter {
+    position: absolute;
+    margin-top: -160px;
+    z-index: 3;
+    width: 85%;
+}
+}
+
+@media screen and (max-width: 991px){
+ .filter  .daterange,
+ .filter .chambre{
+  padding-left: 15px;
+  margin-bottom: 8px;
+  }
+ 
+}
+.filter  .destination .input-group  input,
+.filter  .daterange .input-group input{
+  font-size: 14px;
+  color: #939292;
+  border-right: none;
+}
+
+.filter  input::placeholder{
+  font-size: 14px;
+  color: #939292;
+ 
+ 
+}
+
+.filter .form-control{
+  display: inline;
+  width:90%;
+    height:45px;
+ 
+    border-radius:5px;
+}  
+
+.filter .form-control:focus{
+ 
+  box-shadow: none;
+  }
+
+.filter .input-group {
+flex-wrap: nowrap;
+  align-items: center;
+ 
+  }
+  .filter .form-chambre,
+ .filter .input-group-text {
+    background-color:#fff;
+    border: 1px solid #ced4da;
+    border-radius:5px;
+    width:75%;
+    height:45px;
+}
+
+.filter a:hover{
+text-decoration: none;
+}
+.filter   .btn-reservez {
+background-color: #00a8a3;
+color           : #fff;
+text-transform  : uppercase;
+font-size: 18px;
+font-weight: 400;
+border-radius: 0;
+padding:10px;
+height: 110px;
+
+ 
+}
+.filter   .btn-reservez:hover{
+background-color:#fff;
+color:#00a8a3;
+border: 2px solid #00a8a3;
+}
+
+.modal .btn{
+background-color:#00a8a3;
+color: #fff;
+padding:15px;
+font-size: 16px;
+font-weight: 300;
+border-radius: 5px;
+}
+.modal .btn:hover{
+background-color:#fff;
+color:#00a8a3;
+border: 1px solid #00a8a3;
+}
+
+
+/*end banner*/
+
+.hotels-tunisie{
+  padding:30px 0;
+  background-color: #f4f4f4;
+}
+section .title h1{
+  font-size: 40px;
+color: #000000;
+
+
+}
+section .title p{
+  font-size: 16px;
+color: #565656;
+font-weight: 300;
+
+
+}
+ .hotels-tunisie .owl-carousel .owl-item img {
+  object-fit: cover;
+  height: 300px;
+}
+
+.hotels-tunisie .card {
+  position: relative;
+  border:none;
+  border-bottom: 1px solid #00a8a3;
+}
+section .card .card-text{
+  font-size: 16px;
+color: #000000;
+font-weight: 300;
+
+
+}
+section .btn-list{
+  background-color: #00a8a3;
+  color:#fff;
+  padding:5px 12px;
+}
+section .btn-list:hover{
+  color:#00a8a3;
+  background-color: transparent;
+  border:1px solid #00a8a3;
+  text-decoration: none;
+}
+.hotels-tunisie .card p{
+  font-size: 14px;
+  color: #666666;
+  font-weight: 300;
+ 
+}
+section .card p .fa-star{
+  color:#ffca36;
+}
+ .hotels-tunisie .card .prix{
+  position: absolute;
+  background-color: #00a8a3;
+  width:38%;
+  height:19%;
+  right: 0;
+  top: 32px;
+  color: #fff;
+
+
+}
+section .card .prix .p-prix,
+section .card .prix span{
+  font-size: 12px;
+color: #ffffff;
+font-weight: 300;
+font-style: italic;
+
+
+}
+section .card .prix h3{
+  font-size: 26px;
+color: #ffffff;
+font-weight: bold;
+
+
+}
+
+
+.hotels-tunisie .owl-carousel .owl-nav button.owl-prev{
+  left:-116px;
+  top:47%;
+}
+.hotels-tunisie .owl-carousel .owl-nav button.owl-next{
+  right:-116px;
+  top:47%;
+}
+
+
+/*end Hôtels en Tunisie*/
+/*start Circuits en Tunisie*/
+.circuits-tunisie{
+  padding:60px 0;
+  background-color: #fff;
+}
+ .card{
+  border:none;
+}
+
+.circuits-tunisie .title h1{
+  font-size: 30px;    
+  color: #000;
+  font-family: 'apercubold';
+ 
+}
+.circuits-tunisie .title p{
+  font-size: 20px;
+  color: #565656;
+  font-family: 'apercuregular';
+}
+ .circuits-tunisie .card .prix{
+  position: absolute;
+  background-color: #00a8a3;
+  width:43%;
+  height:24%;
+  right: 0;
+  top: 32px;
+  color: #fff;
+
+
+}
+.circuits-tunisie .p-text{
+  font-size:16px;
+color: #000000;
+font-weight: 300;
+}
+
+ .details-title {
+  color: #fff;
+  font-family: 'apercuregular';
+  margin-bottom: 2px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700
+}
+
+ .details-hotel {
+  color: #fff;
+  font-family: 'apercuregular';
+  font-size: 16px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 5px
+}
+.circuits-tunisie .card .thumbnail{
+  border: 0 none;
+  padding:0;
+  margin: 0;
+  position: relative;
+  background-color: transparent;
+}
+.circuits-tunisie .card .thumbnail img{
+  object-fit: cover;
+  height: 270px;
+}
+.circuits-tunisie .card .thumbnail>img  {
+  box-shadow: 0 25px 20px -21px rgba(0,0,0,.57)
+}
+.overlay {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  height: 101%;
+  top: 0;
+  transform: scale(1);
+  opacity: 0;
+  transition: transform .4s ease 0s;
+  z-index: 1034;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 10px solid #00a8a3;
+}
+.circuits-tunisie .card .thumbnail .details-overlay h5{
+ 
+    font-size: 20px;
+    color: gray;
+    font-family: "apercumedium";
+}
+
+.circuits-tunisie .card .thumbnail .details-overlay p {
+  font-size: 16px;
+  color: #999;
+}
+
+.circuits-tunisie .card .thumbnail .details-overlay .prix-overlay-circuit{
+  color: #00a8a3;
+  font-weight: 300;
+}
+
+.circuits-tunisie .card .thumbnail .details-overlay .prix-overlay-circuit h2 {
+    color: #00a8a3;
+    font-weight: 600;
+    margin: 0;
+}
+.circuits-tunisie .card .thumbnail .details-overlay .price-overlay {
+  color: #00a8a3;
+  font-weight: 300;
+}
+.thumbnail-circuit:hover .overlay {
+  opacity: 1;
+  transform: scale(1)
+}
+ .card .details{
+  bottom: 0;
+  display: block;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  z-index: 1032;
+}
+
+.clearfix:after  {
+  clear: both;
+}
+.circuits-tunisie .btn-reservez{
+  
+    background-color: #00a8a3;
+    color: #fff;
+    padding: 8px 30px;
+    text-transform: uppercase;
+}
+
+
+.circuits-tunisie .btn-reservez:hover {
+    color: #00a8a3;
+    background-color: transparent;
+    border: 1px solid #00a8a3;
+}
+@media (max-width: 991px) {
+  .circuits-tunisie .card,
+  .omra .card {
+    margin-bottom: 20px;
+  }
+   
+}
+/*end Circuits en Tunisie*/
+/*start voyages organisees*/
+.voyages-organisees{
+  padding:30px 0;
+  background-color: #f4f4f4;
+}
+
+
+  .voyages-organisees .card .prix{
+    position: absolute;
+    background-color: #00a8a3;
+    width:38%;
+    height:18%;
+    right: 0;
+    top: 32px;
+    color: #fff;
+ 
+  }
+  .voyages-organisees .owl-carousel .owl-item img {
+   object-fit: cover;
+    height: 350px;
+}
+
+   .card .text {
+    position: absolute;
+    bottom:18px;
+    color:#fff;
+}
+.card p{
+  color:#fff;
+}
+
+
+/* end  voyages organisees*/
+/*start omra*/
+.omra{
+  padding:75px 0;
+  background-color: #fff;
+}
+.omra .card .card-img-top{
+  height:284px;
+  object-fit: cover;
+}
+.omra .card .img-omra{
+  height:582px;
+  object-fit: cover;
+}
+/*end  omra*/
+
+/*start partenaires*/
+.partenaires{
+  background-color: #fff;
+  padding:40px 0;
+}
+.partenaires h1,
+.partenaires .p-question{
+  font-size: 36px;
+color: #000000;
+}
+
+
+.partenaires h2{
+  color: #666;
+  width: 70%;
+  margin: 5px auto;
+  font-weight: 700;
+  font-size: 14px;
+}
+.partenaires p{
+  font-size: 14px;
+  color: #565656;
+  font-family: 'apercuregular'
+
+
+}
+/*end partenaires*/
+/*start contact*/
+.contact{
+    background-color:#f4f4f4;
+    padding         : 30px 0;
+  }
+.contact h3{
+  font-size: 28px;
+  color: #565656;
+  font-weight: 500;
+ 
+}
+.contact p{
+line-height: 25px;
+  color: #565656;
+font-size: 20px;
+
+
+
+}
+.contact input::placeholder{
+  padding-left: 0;
+  font-size: 16px;
+color: #565656;
+font-weight: 300;
+justify-content: start;
+align-items: start;
+}
+.contact .form-control {
+  min-height: 45px;
+  border-color: #fff;
+  border-radius: 0;
+  text-align: center;
+ 
+}
+
+.contact .btn-contact:focus,
+.contact .form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #fff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem #fff;
+}
+.contact .btn-contact{
+min-height: 45px;
+border-radius: 0;
+background: #00a8a3;
+color: #fff;
+font-weight: 600;
+}
+
+.contact .btn-contact:hover{
+  background-color: #fff;
+  color:#00a8a3;
+  border:1px solid #00a8a3;
+
+
+}
+
+/*end contact*/
+/*start footer*/
+footer {
+  padding: 40px 0;
+  background-color: #666666;
+  color:#fff;
+}
+footer .logo-footer{
+  
+    color:#00a8a3;
+    font-size: 30px;
+    font-style: italic;
+  
+  
+}
+footer h4{
+  font-size: 22px;
+}
+footer a{
+  color:#fff;
+}
+footer a,
+footer a:hover{
+  color:#fff;
+}
+
+footer .call,
+footer .email,
+footer .Adresse,
+footer .reseaux-sociaux{
+
+  border-left:1px solid #00a8a3;
+}
+footer .reseaux-sociaux ul li {
+  display      : inline-block;
+
+
+}
+footer .top-footer{
+  border-bottom: #fff;
+}
+footer .logo-footer{
+  width:25%;
+}
+
+footer .reseaux-sociaux img:hover {
+  border:2px solid #e83d0f;
+}
+footer  a:hover{
+   text-decoration: none;
+   color:#00a8a3;
+}
+footer .info ul li{
+  margin-bottom:0;
+}
+footer .copyright  a{
+  color:#00a8a3;
+}
+
+/*end footer*/
